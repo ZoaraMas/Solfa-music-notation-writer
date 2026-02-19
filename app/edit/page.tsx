@@ -1,13 +1,15 @@
 import Link from "next/link";
+import { useState } from "react";
+import Grid from "./_components/grid";
 
-export default function Page() {
+export default function EditPage() {
   return (
-    <main style={styles.container}> 
-      <h1>Bienvenue sur Solfa</h1>
-
-      <Link href="/edit">
+    <main style={styles.container}>
+      <h1>Edit Page</h1>
+      <Grid/>
+      <Link href="/">
         <button style={styles.button}>
-          New Solfa Sheet
+          Back to Home
         </button>
       </Link>
     </main>
