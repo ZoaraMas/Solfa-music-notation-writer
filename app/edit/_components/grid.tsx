@@ -29,15 +29,16 @@ const Grid: React.FC = () => {
         <style jsx>{`
         .grid-container {
           display: grid;
-          grid-template-columns: repeat(${SLOTS_PER_ROW}, minmax(0, 1fr));
-          gap: 12px;
-          padding: 20px;
-          max-width: 1000px;
+          grid-template-columns: repeat(${SLOTS_PER_ROW}, max-content);
+          gap: 15px;
+          padding: 40px;
+          justify-content: center;
           margin: 0 auto;
         }
         .slot-wrapper {
           display: flex;
           justify-content: center;
+          align-items: center;
         }
       `}</style>
     </div>

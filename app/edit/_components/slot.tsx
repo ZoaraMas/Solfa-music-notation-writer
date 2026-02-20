@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { SLOT_CONFIG } from "@/constants/config";
 
 interface SlotProps {
   id: string;
@@ -12,9 +13,13 @@ const Slot: React.FC<SlotProps> = React.memo(({id, value, onChange}) => {
     <input
       id={id}
       type="text"
-      maxLength={10}
+      maxLength={SLOT_CONFIG.MAX_LENGTH}
       onChange={(e) => onChange(e.target.value)}
       className="slot-style"
+      style={{
+        width: SLOT_CONFIG.WIDTH,
+        height: SLOT_CONFIG.HEIGHT,
+      }}
     />
   );
 }); 

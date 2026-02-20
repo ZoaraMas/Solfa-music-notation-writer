@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*  */
+
+.slot-style {
+  border: solid;                /* Remove the box border */
+  background: transparent;     /* Remove background if any */
+
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+  font-family: monospace; /* Keeps characters perfectly centered */
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+}
+
+.slot-style:focus {
+  border-bottom: 2px solid #3b82f6; /* Optional: Change color on focus */
+}
