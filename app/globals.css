@@ -27,18 +27,89 @@ body {
 
 /*  */
 
-.slot-style {
-  border: solid;                /* Remove the box border */
-  background: transparent;     /* Remove background if any */
+.sheet-container {
+width: 100%;
+max-width: 900px;
+margin: 0 auto;
+padding: 40px;
+background: white;
+color: black;
+font-family: serif;
+}
+.sheet-header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.title-input {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  outline: none;
+}
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.meta-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: serif;
+  font-size: 1rem;
+  width: 45%;
+}
+.right { text-align: right; }
+.left { text-align: left; }
+.italic { font-style: italic; }
+.inline-input {
+  border: none;
+  outline: none;
+  width: 30px;
+  font-family: inherit;
+}
+.tiny { width: 15px; text-align: center; }
 
+
+.column-separator {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.slot-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot-style {
+  /* Remove the full box */
+  border: none; 
+  
+  /* Add only the bottom line */
+  border-bottom: 1px solid black; 
+  
+  background: transparent;
   padding: 0;
   margin: 0;
 
+  /* Dimensions - make sure these match your constants */
+  width: 30px; 
+  height: 35px;
+
   text-align: center;
-  font-family: monospace; /* Keeps characters perfectly centered */
+  font-family: monospace;
   font-size: 0.9rem;
   font-weight: bold;
   color: black;
+  
+  /* Remove the default focus ring */
+  outline: none; 
 }
 
 .slot-style:focus {
